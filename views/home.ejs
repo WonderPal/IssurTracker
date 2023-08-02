@@ -1,0 +1,23 @@
+<div class="Visual">
+  <% for( let project of projects ) { %>
+  <div class="Project-details">
+    <div class="card-header" style="background-color: black; color: white ;">
+      Name of the project : <%= project.name %>
+    </div>
+    <div class="card-body" style="background-color: darkgrey; color: black;">
+      <h6 class="subtitles">
+        Author : <%= project.author %>
+      </h6>
+      <p class="card-text">
+       Description : <%= project.description %>
+      </p>
+
+      <div class="text-end">
+        <a href="/project/<%=project._id%>" class="btn"
+          >Open project</a
+        >
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>
